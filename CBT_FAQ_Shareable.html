@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Cognitive Biblical Therapy | Help People Ministry</title>
+<meta name="description" content="20 frequently asked questions about Cognitive Biblical Therapy and Biblical Counseling — for pastors, counselors, and ministry leaders.">
+<meta name="author" content="Help People Ministry">
+<meta property="og:title" content="Cognitive Biblical Therapy — FAQ for Pastors & Counselors">
+<meta property="og:description" content="20 key questions about Cognitive Biblical Therapy — a valid, Scripturally grounded counseling method developed by Dr. Daniel D. Wilkinson.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Cognitive Biblical Therapy FAQ — Help People Ministry">
+<meta name="twitter:description" content="20 key questions for pastors and counselors about Cognitive Biblical Therapy and Biblical Counseling.">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --teal:       #1a6b52;
+    --teal-mid:   #22876a;
+    --teal-light: #e6f4ef;
+    --teal-pale:  #f2faf7;
+    --gold:       #a07820;
+    --gold-light: #fdf6e3;
+    --dark:       #181c14;
+    --mid:        #3a3e32;
+    --body:       #4e5244;
+    --gray:       #7a7e72;
+    --border:     #d4d8cc;
+    --bg:         #f8f7f3;
+    --white:      #ffffff;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: var(--bg);
+    color: var(--body);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── HEADER ─────────────────────────────────────────────── */
+  .page-header {
+    background: var(--dark);
+    padding: 64px 40px 56px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .page-header::before {
+    content: '';
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 60% 80% at 20% 60%, rgba(26,107,82,.32) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 60% at 85% 30%, rgba(160,120,32,.12) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .header-inner { position: relative; z-index: 1; max-width: 700px; margin: 0 auto; }
+
+  .ministry-eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11px; font-weight: 600;
+    letter-spacing: .18em; text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 22px;
+  }
+  .ministry-eyebrow::before,
+  .ministry-eyebrow::after {
+    content: ''; display: block;
+    width: 28px; height: 1px;
+    background: var(--gold); opacity: .5;
+  }
+
+  .page-header h1 {
+    font-family: 'Lora', serif;
+    font-size: clamp(30px, 5vw, 50px);
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 14px;
+  }
+  .page-header h1 em { font-style: italic; color: #78d4ae; }
+
+  .header-sub {
+    font-size: 16px; font-weight: 300;
+    color: rgba(255,255,255,.6);
+    max-width: 520px; margin: 0 auto 30px;
+    line-height: 1.7;
+  }
+
+  .scripture-strip {
+    display: inline-block;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.1);
+    border-radius: 3px;
+    padding: 12px 22px;
+    font-family: 'Lora', serif;
+    font-size: 15px; font-style: italic;
+    color: rgba(255,255,255,.75);
+    line-height: 1.6;
+  }
+  .scripture-strip cite {
+    display: block; font-style: normal;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px; font-weight: 600;
+    letter-spacing: .08em; color: var(--gold);
+    margin-top: 6px;
+  }
+
+  /* ── LAYOUT ──────────────────────────────────────────────── */
+  .page-body {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0 24px 72px;
+  }
+
+  /* ── CATEGORY LABELS ────────────────────────────────────── */
+  .category-label {
+    display: flex; align-items: center; gap: 12px;
+    margin: 52px 0 20px;
+  }
+  .category-label span {
+    font-size: 11px; font-weight: 600;
+    letter-spacing: .15em; text-transform: uppercase;
+    color: var(--teal); white-space: nowrap;
+  }
+  .category-label::after {
+    content: ''; flex: 1; height: 1px;
+    background: var(--border);
+  }
+
+  /* ── FAQ ITEMS ───────────────────────────────────────────── */
+  .faq-item {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    transition: box-shadow .2s, border-color .2s;
+  }
+  .faq-item:hover { border-color: #b8d8ce; box-shadow: 0 2px 12px rgba(26,107,82,.06); }
+  .faq-item.open  { border-color: var(--teal-mid); box-shadow: 0 4px 20px rgba(26,107,82,.10); }
+
+  .faq-trigger {
+    width: 100%; background: none; border: none;
+    display: flex; align-items: flex-start; gap: 14px;
+    padding: 20px 22px;
+    cursor: pointer; text-align: left;
+  }
+
+  .q-num {
+    flex-shrink: 0;
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--teal-light);
+    color: var(--teal);
+    font-size: 12px; font-weight: 600;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 1px;
+    transition: background .2s, color .2s;
+  }
+  .faq-item.open .q-num {
+    background: var(--teal);
+    color: var(--white);
+  }
+
+  .q-text {
+    flex: 1;
+    font-family: 'Lora', serif;
+    font-size: 17px; font-weight: 500;
+    color: var(--dark);
+    line-height: 1.4;
+  }
+
+  .chevron {
+    flex-shrink: 0;
+    width: 20px; height: 20px;
+    margin-top: 3px;
+    color: var(--gray);
+    transition: transform .3s ease, color .2s;
+  }
+  .faq-item.open .chevron {
+    transform: rotate(180deg);
+    color: var(--teal);
+  }
+
+  .faq-answer {
+    max-height: 0; overflow: hidden;
+    transition: max-height .4s cubic-bezier(.4,0,.2,1);
+  }
+  .faq-answer-inner {
+    padding: 0 22px 22px 62px;
+    border-top: 1px solid var(--teal-light);
+    padding-top: 18px;
+  }
+
+  .faq-answer-inner p {
+    font-size: 15px; color: var(--body);
+    line-height: 1.78; margin-bottom: 12px;
+  }
+  .faq-answer-inner p:last-of-type { margin-bottom: 0; }
+
+  .verse-callout {
+    background: var(--teal-pale);
+    border-left: 3px solid var(--teal);
+    border-radius: 0 4px 4px 0;
+    padding: 12px 16px;
+    margin-top: 14px;
+  }
+  .verse-callout p {
+    font-family: 'Lora', serif;
+    font-size: 14px !important;
+    font-style: italic;
+    color: var(--mid) !important;
+    line-height: 1.65 !important;
+    margin: 0 !important;
+  }
+  .verse-callout cite {
+    display: block; font-style: normal;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 12px; font-weight: 600;
+    letter-spacing: .06em; color: var(--gold);
+    margin-top: 5px;
+  }
+
+  /* ── FOOTER ──────────────────────────────────────────────── */
+  .page-footer {
+    background: var(--dark);
+    text-align: center;
+    padding: 40px 24px;
+    margin-top: 0;
+  }
+  .page-footer p {
+    font-size: 13px; color: rgba(255,255,255,.4);
+    line-height: 1.7;
+  }
+  .page-footer strong { color: rgba(255,255,255,.7); font-weight: 500; }
+
+  @media (max-width: 600px) {
+    .page-header { padding: 44px 20px 40px; }
+    .faq-answer-inner { padding-left: 22px; }
+    .q-text { font-size: 15px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────────── -->
+<header class="page-header">
+  <div class="header-inner">
+    <div class="ministry-eyebrow">Help People Ministry</div>
+    <h1>Frequently Asked Questions<br><em>Cognitive Biblical Therapy</em></h1>
+    <p class="header-sub">For pastors, counselors, and ministry leaders exploring a Scripturally grounded approach to counseling and soul care.</p>
+    <div class="scripture-strip">
+      "All Scripture is God-breathed and is useful for teaching, rebuking,<br>correcting and training in righteousness."
+      <cite>2 Timothy 3:16–17</cite>
+    </div>
+  </div>
+</header>
+
+<!-- ── BODY ────────────────────────────────────────────────── -->
+<div class="page-body">
+
+  <!-- CATEGORY 1 -->
+  <div class="category-label"><span>Foundations of Biblical Counseling</span></div>
+
+  <!-- Q1 -->
+  <div class="faq-item" id="faq1">
+    <button class="faq-trigger" onclick="toggle('faq1')" aria-expanded="false">
+      <span class="q-num">1</span>
+      <span class="q-text">What is Biblical counseling, and how is it different from Christian counseling?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Biblical counseling and Christian counseling are not the same thing, though they are often used interchangeably. Within the field of Christian counseling there are actually three distinct divisions. The first involves counselors who use secular, humanistic psychotherapies in their work. The second consists of integrationists who blend psychology and Scripture, deferring to Scripture when deemed appropriate. The third — biblical counseling — relies solely on Scripture and the presence of God for healing and restoration.</p>
+        <p>Biblical counseling begins with the conviction that God has spoken truthfully and sufficiently through Scripture. It treats the Word of God as the controlling authority for understanding the human person, the human problem, and the path of genuine change — not as one resource among many, but as the foundational and final authority.</p>
+        <div class="verse-callout"><p>"The law of the Lord is perfect, refreshing the soul. The statutes of the Lord are trustworthy, making wise the simple."</p><cite>Psalm 19:7</cite></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q2 -->
+  <div class="faq-item" id="faq2">
+    <button class="faq-trigger" onclick="toggle('faq2')" aria-expanded="false">
+      <span class="q-num">2</span>
+      <span class="q-text">Is biblical counseling anti-psychology? Does it ignore what science has discovered about the mind?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>No. Biblical counseling does not call counselors to ignore what psychology and medical science has discovered about mankind's physical, medical, social, and psychological nature. Throughout history, God has given mankind the ability to discover more of His truths about the mind, heart, and physical being. For some psychologists and biblical counselors, discerning the therapeutic approach gets complicated at exactly this point — and that tension deserves honest engagement rather than dismissal.</p>
+        <p>What biblical counseling rejects is the underlying philosophical premise of secular humanism — the belief that man is basically good, without sin, without need of a Savior, and without an eternal soul. It is that worldview, not the observable findings of psychology, that conflicts with Scripture. A counselor can acknowledge the realities of brain chemistry, trauma, and developmental psychology while still insisting that the deepest interpretation of human need must be governed by God's Word.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q3 -->
+  <div class="faq-item" id="faq3">
+    <button class="faq-trigger" onclick="toggle('faq3')" aria-expanded="false">
+      <span class="q-num">3</span>
+      <span class="q-text">What is the biblical basis for using Scripture as the primary counseling resource?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Several foundational passages establish this premise. Second Timothy 3:16–17 teaches that all Scripture is God-breathed and useful for teaching, rebuking, correcting, and training in righteousness — indicating that the Bible is fully sufficient to equip individuals for every good work. Hebrews 4:12 adds that the Word of God is living and active, penetrating deeply into thoughts and attitudes of the heart, revealing its unique ability to diagnose and address the inner condition of a person.</p>
+        <p>Psalm 19:7–8 illustrates that the law of the Lord is perfect, trustworthy, right, and enlightening, demonstrating Scripture's capacity to restore the soul and impart wisdom. Isaiah 40:8 reinforces this by declaring that the Word of God endures forever, establishing its unchanging authority as a reliable guide for all generations. These passages together present not merely a devotional resource, but a living, sufficient, and authoritative tool for understanding and addressing the full range of human problems.</p>
+        <div class="verse-callout"><p>"The word of God is alive and active. Sharper than any double-edged sword, it penetrates even to dividing soul and spirit… it judges the thoughts and attitudes of the heart."</p><cite>Hebrews 4:12</cite></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY 2 -->
+  <div class="category-label"><span>Cognitive Biblical Therapy — The Method</span></div>
+
+  <!-- Q4 -->
+  <div class="faq-item" id="faq4">
+    <button class="faq-trigger" onclick="toggle('faq4')" aria-expanded="false">
+      <span class="q-num">4</span>
+      <span class="q-text">What is Cognitive Biblical Therapy, and where did it come from?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Cognitive Biblical Therapy (CBT) is a counseling methodology developed by Daniel D. Wilkinson, Ph.D., L.P.C., in collaboration with Dr. Dennis Frey, built on the foundational premise of Biblical Directionism — that the sixty-six books of Scripture are the infallible Word of God to man, and as such contain all truth necessary for the proper development, correction, and maintenance of the human mind.</p>
+        <p>The methodology emerged from nearly four years of research and direct clinical application at a counseling center in Champaign, Illinois, involving 186 counseling cases across a broad range of presenting problems, socioeconomic backgrounds, and religious affiliations. It was developed as a refinement to the nouthetic counseling model of Jay Adams, addressing the need for a reproducible, processual Biblical counseling system that meets counselees where they are while still grounding the entire therapeutic work in Scripture and the Holy Spirit.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q5 -->
+  <div class="faq-item" id="faq5">
+    <button class="faq-trigger" onclick="toggle('faq5')" aria-expanded="false">
+      <span class="q-num">5</span>
+      <span class="q-text">What are the five steps of Cognitive Biblical Therapy?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>The five steps are <strong>Profiling, Silhouetting, Confrontation, Commitment, and Conditioning</strong> — each drawn from the inherent structure of Scripture itself, not borrowed from secular frameworks.</p>
+        <p><strong>Profiling</strong> is the data-gathering phase — an examination of the individual's past and present state of being. <strong>Silhouetting</strong> uses that data to develop an outline of the counselee's present condition contrasted against the Biblical norm, revealing the gap between where they are and where God's Word points. <strong>Confrontation</strong> explains how the counselee's current state may result from a failure to live in accordance with God's Word and presents the Biblical remedy. <strong>Commitment</strong> brings the counselee face to face with the need to make a personal commitment to follow the Biblical direction for help and healing. <strong>Conditioning</strong> assists the counselee in putting Biblical principles into actual daily practice — with the Holy Spirit progressively replacing the human counselor as the source of ongoing guidance.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q6 -->
+  <div class="faq-item" id="faq6">
+    <button class="faq-trigger" onclick="toggle('faq6')" aria-expanded="false">
+      <span class="q-num">6</span>
+      <span class="q-text">How does CBT differ from nouthetic counseling (Jay Adams)?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Cognitive Biblical Therapy agrees with the Biblical premise behind Adams' nouthetic model — that confrontation based on Scripture is essential, that man's sinful nature is the root of his deepest problems, and that only a relationship with God through Jesus Christ enables genuine change. However, CBT addresses what some have identified as a limitation of the purely confrontational approach.</p>
+        <p>Adams' model can be misapplied when the counselor discounts physical illness, assumes the counselee has a sufficient knowledge of Scripture to receive confrontation meaningfully, or when confrontation is delivered without a process that facilitates understanding over time. CBT introduces a structured, reproducible methodology that begins where the counselee is in their Biblical knowledge and their relationship to God — using profiling and silhouetting to build understanding before confrontation occurs. This makes confrontation one part of a more effective, Holy Spirit-guided process rather than the sole therapeutic instrument.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q7 -->
+  <div class="faq-item" id="faq7">
+    <button class="faq-trigger" onclick="toggle('faq7')" aria-expanded="false">
+      <span class="q-num">7</span>
+      <span class="q-text">How does CBT relate to secular cognitive therapies like Rational-Emotive Therapy (RET)?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Cognitive Biblical Therapy shares a surface-level similarity with Rational-Emotive Therapy in that both address the cognitive dimension of human experience — both recognize that how a person thinks shapes how they feel and behave. RET holds that emotional disturbance results from irrational beliefs that can be corrected through reason and an alternative belief system.</p>
+        <p>However, the foundational premise is entirely different. RET is rooted in secular humanism — the belief that man is basically good and capable of rational self-correction without reference to God. CBT holds that the deepest human problem is not irrational cognition but a broken relationship to God through sin, and that genuine transformation requires not a better belief system but a restored relationship to the Creator through Jesus Christ. Where RET offers reason as the corrective, CBT offers the Holy Spirit and the living Word of God.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY 3 -->
+  <div class="category-label"><span>Effectiveness & Research</span></div>
+
+  <!-- Q8 -->
+  <div class="faq-item" id="faq8">
+    <button class="faq-trigger" onclick="toggle('faq8')" aria-expanded="false">
+      <span class="q-num">8</span>
+      <span class="q-text">Has Cognitive Biblical Therapy been studied? What do the results show?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Yes. The research behind Cognitive Biblical Therapy is grounded in nearly four years of applied clinical work involving 186 individuals across a broad range of presenting problems, socioeconomic backgrounds, and religious affiliations — including both Christians and non-Christians.</p>
+        <p>The results across the four primary presenting problem categories were notably consistent: an <strong>86% success rate</strong> in spiritual category cases, <strong>83%</strong> in coping with life concerns, <strong>81%</strong> in parenting situations, and <strong>78%</strong> in marital counseling — one of the most complex categories in clinical work. These outcomes were achieved not through behavioral technique alone but through the consistent application of Biblical truth, the mediation of the Holy Spirit, and a structured five-step methodology that brought counselees into a personal, functional relationship with God.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q9 -->
+  <div class="faq-item" id="faq9">
+    <button class="faq-trigger" onclick="toggle('faq9')" aria-expanded="false">
+      <span class="q-num">9</span>
+      <span class="q-text">What kinds of presenting problems can CBT address?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Cognitive Biblical Therapy has demonstrated effectiveness across a wide range of presenting problems. The research included marital difficulties, parenting challenges, spiritual crises, depression, eating disorders (including anorexia and bulimia), child molestation, spouse abuse, alcoholism and addiction, coping with loss and grief, and general life adjustment challenges. The methodology was applied across diverse socioeconomic levels and to both Christian and non-Christian clients.</p>
+        <p>The consistent finding is that the presenting problem, regardless of its surface form, ultimately brings the focus back to the counselee's relationship to God. All non-physiologically induced problems have their solution rooted in God and a restored relationship with Him. Where physiological factors are present, CBT does not dismiss them — it recognizes that medical referral and collaboration may be necessary components of a complete care plan.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q10 -->
+  <div class="faq-item" id="faq10">
+    <button class="faq-trigger" onclick="toggle('faq10')" aria-expanded="false">
+      <span class="q-num">10</span>
+      <span class="q-text">Can CBT be used with non-Christians? Is it only effective for believers?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Cognitive Biblical Therapy is based on the premise that the principles upon which it is founded are universal — that all human beings, regardless of their current faith position, will respond to a therapy that directly addresses man's eternal soul, his need for a restored relationship to God the Father, and his ongoing need for God's leadership in everyday life. The research population included both Christians and non-Christians, and the methodology has demonstrated effectiveness across both groups.</p>
+        <p>The reason CBT can reach non-Christians is that it does not presuppose prior Biblical knowledge or existing faith. The profiling and silhouetting phases begin where the counselee is — intellectually, spiritually, and experientially. The methodology then introduces the counselee to God in a practical, educational, and reasonable manner, making the invitation to a relationship with Christ a natural outcome of the counseling process rather than a prerequisite for beginning it.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY 4 -->
+  <div class="category-label"><span>For Pastors & Church Leaders</span></div>
+
+  <!-- Q11 -->
+  <div class="faq-item" id="faq11">
+    <button class="faq-trigger" onclick="toggle('faq11')" aria-expanded="false">
+      <span class="q-num">11</span>
+      <span class="q-text">Can a pastor use CBT without a clinical license?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Cognitive Biblical Therapy was specifically designed to be accessible beyond the licensed clinical setting. Dr. Wilkinson's initial recommendation is that CBT be presented to pastors, laypeople, and others with a background in Scripture who are currently involved in counseling situations. The methodology's structured five-step framework provides a reproducible, learnable process that does not require clinical licensure to begin applying within a pastoral care context.</p>
+        <p>That said, pastors using CBT should be clear about the scope of their competence and prepared to refer to licensed professionals when presenting problems involve physiological factors, psychiatric diagnosis, or levels of complexity that exceed pastoral training. CBT equips pastors to do more — not to do everything. The goal is that the local church can stop sending members to purely humanistic counseling and instead offer genuinely Christ-centered care from within the body.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q12 -->
+  <div class="faq-item" id="faq12">
+    <button class="faq-trigger" onclick="toggle('faq12')" aria-expanded="false">
+      <span class="q-num">12</span>
+      <span class="q-text">How does CBT strengthen the local church?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>The vision behind Cognitive Biblical Therapy is explicitly ecclesial — it is designed to restore the local church's confidence in the sufficiency of Scripture and its capacity to provide effective, Christ-centered answers to the problems its members encounter in everyday life. When pastors are equipped with a structured, Scripturally grounded counseling methodology, the church can stop outsourcing care to humanistic counseling systems that may undermine the very faith they seek to strengthen.</p>
+        <p>The practical result of effective biblical counseling within a congregation is multi-directional: spiritually strengthened members are better positioned to evangelize, newcomers encounter a church that demonstrates the practical power of the Gospel, and the body as a whole grows in its collective understanding of how God's Word addresses real-life suffering, conflict, and sin. CBT is ultimately a tool for building the Kingdom — not just resolving presenting problems.</p>
+        <div class="verse-callout"><p>"Is anyone among you in trouble? Let them pray. Is anyone happy? Let them sing songs of praise. Is anyone among you sick? Let them call the elders of the church."</p><cite>James 5:13–14</cite></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q13 -->
+  <div class="faq-item" id="faq13">
+    <button class="faq-trigger" onclick="toggle('faq13')" aria-expanded="false">
+      <span class="q-num">13</span>
+      <span class="q-text">What should a pastor look for in a counselor they are considering referring to?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Most people who come to a church-recommended counselor assume that the counselor will base advice on Scripture, will have a personal relationship with God, will be willing to discuss God and a relationship with Him, and will be willing to pray. The reality they encounter may or may not fit that description — and that gap is a source of significant disillusionment. Pastors bear responsibility for vetting referrals carefully.</p>
+        <p>A pastor should look for a counselor who is clear about which of the three schools of Christian counseling they represent: secular psychotherapy, integration, or Biblical counseling. Ask directly whether sessions begin and end with prayer, whether Scripture is used in sessions, and whether the counselor's goal is ultimately to point the counselee toward God rather than toward symptom management. Credentials matter — but theological orientation and methodology matter more for the spiritual welfare of your congregation.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY 5 -->
+  <div class="category-label"><span>For Counselors & Therapists</span></div>
+
+  <!-- Q14 -->
+  <div class="faq-item" id="faq14">
+    <button class="faq-trigger" onclick="toggle('faq14')" aria-expanded="false">
+      <span class="q-num">14</span>
+      <span class="q-text">How does the counselor's role differ in CBT compared to secular therapy?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>In Cognitive Biblical Therapy, the counselor is explicitly and intentionally temporary. The goal is not to create dependency on the counselor's insight or relational warmth, but to serve as a bridge — guiding the counselee toward a direct, personal, ongoing relationship with God through Jesus Christ in which the Holy Spirit becomes the permanent Counselor. The conditioning phase of CBT is specifically designed to accomplish this transition, progressively releasing the counselee from the formal counseling relationship.</p>
+        <p>Dr. Wilkinson often told counselees, "I am not a good counselor — do not believe a single word I say. Listen to me, hear me, but take what I say back to God and ask Him if it is true. If it is, search the Scripture for confirmation, and then act on it as God enables you." This posture — directing all authority to God rather than the counselor — is fundamentally different from most secular therapeutic relationships, where the counselor's expertise and the therapeutic alliance are the primary agents of change.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q15 -->
+  <div class="faq-item" id="faq15">
+    <button class="faq-trigger" onclick="toggle('faq15')" aria-expanded="false">
+      <span class="q-num">15</span>
+      <span class="q-text">What role does Agapé love play in Cognitive Biblical Therapy?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Agapé love occupies a central place in Cognitive Biblical Therapy — particularly in the silhouetting and confrontation phases. The Agapé love framework, drawn from 1 Corinthians 13 and reinforced throughout the New Testament, provides the Biblical norm against which the counselee's current relational patterns, heart attitudes, and behaviors are assessed.</p>
+        <p>In clinical application, silhouettes concerning Agapé love are used as a diagnostic and formative tool. A counselee keeping a record of wrongs, struggling to forgive, or relating to others primarily through self-protection rather than self-giving love is not simply behaving poorly — they are living outside the norm of Agapé, which itself points to something broken in their relationship to God. The clinical goal is not merely behavioral correction but the formation of genuine, God-sourced Agapé love that flows from a restored relationship to the Father — the only reliable source from which that love can come.</p>
+        <div class="verse-callout"><p>"We love because he first loved us."</p><cite>1 John 4:19</cite></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q16 -->
+  <div class="faq-item" id="faq16">
+    <button class="faq-trigger" onclick="toggle('faq16')" aria-expanded="false">
+      <span class="q-num">16</span>
+      <span class="q-text">How does CBT handle serious issues like abuse, addiction, or eating disorders?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Cognitive Biblical Therapy has been applied to serious and complex presenting problems including child molestation, spouse abuse, alcoholism, anorexia, and bulimia — and the research outcomes reflect meaningful success across these categories. The methodology does not reduce these issues to simple moral failures requiring only confrontation. Rather, it recognizes that the presenting problem is often the surface expression of deeper spiritual disconnection, and that lasting change requires engaging the root — the counselee's relationship to God — not only the symptom.</p>
+        <p>For example, a counselee struggling with an eating disorder still needs to confront the source of the decision-making patterns that sustain it — which may involve a dictatorial parent who instilled a false sense of worthlessness, or a need to control rooted in fear. CBT guides the counselee to bring these specific wounds to the Holy Spirit for healing, while also equipping them with practical Biblical tools for the daily work of change. Physical and psychiatric dimensions are not ignored — medical referral is recognized as appropriate when physiological factors are involved.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY 6 -->
+  <div class="category-label"><span>Discipleship, Homework & Practical Application</span></div>
+
+  <!-- Q17 -->
+  <div class="faq-item" id="faq17">
+    <button class="faq-trigger" onclick="toggle('faq17')" aria-expanded="false">
+      <span class="q-num">17</span>
+      <span class="q-text">What is the role of homework and Scripture assignments in CBT?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Biblical counseling moves beyond the counseling session — and in Cognitive Biblical Therapy, homework is a structured part of the conditioning phase. Spiritual growth assignments help the counselee practice obedience, meditate on Scripture, pray, participate in church life, and apply biblical truth in measurable, real-life ways between sessions. This is not busywork; it is the mechanism by which the Holy Spirit's work during sessions becomes integrated into the fabric of daily living.</p>
+        <p>The counselor also uses personal examples in transparent, appropriately humble ways — giving the client real-life illustrations of how Biblical principles work when applied honestly to life's difficulties. This makes the methodology relational rather than mechanical and honors the counselee's intelligence and dignity. The goal is for the counselee to discover — through their own growing engagement with Scripture and the Spirit — that God's Word is not merely a reference but a living reality that applies to everything they face.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q18 -->
+  <div class="faq-item" id="faq18">
+    <button class="faq-trigger" onclick="toggle('faq18')" aria-expanded="false">
+      <span class="q-num">18</span>
+      <span class="q-text">How does CBT define success in counseling? What does a successful outcome look like?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>Success in Cognitive Biblical Therapy is not defined as symptom resolution alone, though that is often an outcome. True success is the establishment or renewal of a personal, ongoing, functional relationship between the counselee and God through Jesus Christ — a relationship in which the Holy Spirit becomes the counselee's primary Counselor, guide, and source of wisdom for ongoing life challenges.</p>
+        <p>Dr. Wilkinson describes the ultimate goal as helping the individual "establish a relationship to the living Lord Jesus, so that life can be lived out in a love relationship to God which draws others to Christ and prepares the individual for the reality of an eternal life to come." Within this framework, a counselee who has genuinely come to know God personally, who understands how to bring their daily struggles to Him through prayer and Scripture, and who has the tools to continue growing has experienced the deepest form of success that Cognitive Biblical Therapy can offer — regardless of what surface-level problems may still require ongoing attention.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CATEGORY 7 -->
+  <div class="category-label"><span>Validity, Reliability & the Broader Context</span></div>
+
+  <!-- Q19 -->
+  <div class="faq-item" id="faq19">
+    <button class="faq-trigger" onclick="toggle('faq19')" aria-expanded="false">
+      <span class="q-num">19</span>
+      <span class="q-text">Why did the church lose its counseling authority in the first place, and why does it matter now?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>The historical answer is rooted in the cultural disruption of Modernism following World War II. As the United States shifted from rural to urban life, from production to consumerism, and from communal to individual values, the church was caught off guard. Doubt crept into pulpits, and as clergy lost confidence in the authority and sufficiency of Scripture for modern problems, the secular psychotherapy movement — with its optimistic view of human nature and clinical credibility — filled the vacuum. The church, "shaken and reeling," began sending its members to secular professionals rather than strengthening its own capacity for soul care.</p>
+        <p>It matters now because the philosophical premises of secular humanism that underlie most psychotherapy are still in direct conflict with the Christian faith — and the counselee who goes to a secular therapist expecting to have their faith honored and their relationship to God central to the work will frequently be disappointed. Cognitive Biblical Therapy represents part of the answer: a methodologically rigorous, Scripturally grounded alternative that can restore the church's confidence in God's Word as sufficient for the healing of the human mind.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q20 -->
+  <div class="faq-item" id="faq20">
+    <button class="faq-trigger" onclick="toggle('faq20')" aria-expanded="false">
+      <span class="q-num">20</span>
+      <span class="q-text">What is the ultimate goal of Cognitive Biblical Therapy — for the counselee, the counselor, and the church?</span>
+      <svg class="chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 7.5l5 5 5-5"/></svg>
+    </button>
+    <div class="faq-answer">
+      <div class="faq-answer-inner">
+        <p>For the <strong>counselee</strong>, the goal is a personal, living, daily relationship with God through Jesus Christ — one that equips them not just to resolve the presenting problem but to face every subsequent challenge of life with the Holy Spirit as their guide. The presenting problem is the door; transformation is the destination.</p>
+        <p>For the <strong>counselor</strong>, the goal is to work themselves out of a job — to serve as a temporary bridge that connects the counselee to God and then steps back as the Holy Spirit takes over. The counselor's deepest satisfaction is not in the counselee's gratitude but in witnessing God's healing love become a reality in a human life.</p>
+        <p>For the <strong>church</strong>, Cognitive Biblical Therapy offers the possibility of reclaiming what was lost — the confidence that God's Word is sufficient, that the local church can be a genuine center of healing, and that Christ-centered counseling can draw both the saved and the unsaved toward the Cross. As Dr. Wilkinson writes: "We can renew the age-old cry of mercy at the Cross and the salvation that comes from Jesus Christ."</p>
+        <div class="verse-callout"><p>"But there is a God in heaven who reveals mysteries."</p><cite>Daniel 2:28</cite></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page-body -->
+
+<!-- ── FOOTER ───────────────────────────────────────────────── -->
+<footer class="page-footer">
+  <p><strong>Help People Ministry</strong> · Spiritual Formation &amp; Biblical Counseling Resources</p>
+  <p>This content is drawn from the research and clinical work of Daniel D. Wilkinson, Ph.D., L.P.C., Biblical Christian Counseling Ministries.</p>
+</footer>
+
+<!-- SHARE TOOLBAR -->
+<style>
+.share-bar {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 9999;
+}
+.share-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--dark);
+  color: white;
+  border: none;
+  border-radius: 40px;
+  padding: 10px 18px 10px 14px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  transition: background 0.2s, transform 0.15s;
+  white-space: nowrap;
+}
+.share-btn:hover { background: var(--teal); transform: translateY(-1px); }
+.share-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
+.expand-bar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+.expand-bar-left { font-size: 13px; color: var(--gray); }
+.expand-bar-left strong { color: var(--dark); font-weight: 500; }
+.expand-bar-btns { display: flex; gap: 8px; }
+.ebar-btn {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 12px; font-weight: 500;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 5px 12px;
+  cursor: pointer;
+  color: var(--mid);
+  transition: all 0.15s;
+}
+.ebar-btn:hover { background: var(--teal-light); border-color: var(--teal); color: var(--teal); }
+.copy-toast {
+  position: fixed;
+  bottom: 90px;
+  right: 24px;
+  background: var(--teal);
+  color: white;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  font-family: 'Source Sans 3', sans-serif;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+  z-index: 9999;
+}
+.copy-toast.show { opacity: 1; }
+@media print {
+  .share-bar, .expand-bar { display: none !important; }
+  .faq-answer { max-height: none !important; }
+  .faq-item { border: 1px solid #ccc !important; margin-bottom: 12px !important; }
+  .chevron { display: none !important; }
+}
+@media (max-width: 500px) {
+  .share-bar { bottom: 16px; right: 16px; }
+  .share-btn span { display: none; }
+  .share-btn { padding: 10px 12px; border-radius: 50%; }
+}
+</style>
+
+<!-- STICKY TOP BAR -->
+<div class="expand-bar">
+  <div class="expand-bar-left"><strong>Cognitive Biblical Therapy FAQ</strong> &nbsp;·&nbsp; 20 Questions · 7 Categories</div>
+  <div class="expand-bar-btns">
+    <button class="ebar-btn" onclick="expandAll()">Expand All</button>
+    <button class="ebar-btn" onclick="collapseAll()">Collapse All</button>
+    <button class="ebar-btn" onclick="window.print()">Print / Save PDF</button>
+  </div>
+</div>
+
+<!-- FLOATING SHARE BUTTONS -->
+<div class="share-bar">
+  <button class="share-btn" onclick="copyLink()">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 2h4v4M14 2l-6 6M6 4H3a1 1 0 00-1 1v8a1 1 0 001 1h8a1 1 0 001-1v-3"/></svg>
+    <span>Copy Link</span>
+  </button>
+  <button class="share-btn" onclick="shareEmail()">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="3" width="14" height="10" rx="1.5"/><path d="M1 4l7 5 7-5"/></svg>
+    <span>Share by Email</span>
+  </button>
+  <button class="share-btn" onclick="window.print()">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 5V2h8v3M4 11H2V6h12v5h-2M4 9h8v5H4z"/></svg>
+    <span>Print / PDF</span>
+  </button>
+</div>
+
+<!-- COPY TOAST -->
+<div class="copy-toast" id="copyToast">Link copied to clipboard!</div>
+
+<script>
+// Accordion toggle
+function toggle(id) {
+  const item    = document.getElementById(id);
+  const answer  = item.querySelector('.faq-answer');
+  const trigger = item.querySelector('.faq-trigger');
+  const isOpen  = item.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(other => {
+    if (other.id !== id) {
+      other.classList.remove('open');
+      other.querySelector('.faq-answer').style.maxHeight = '0';
+      other.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+    }
+  });
+  if (isOpen) {
+    item.classList.remove('open');
+    answer.style.maxHeight = '0';
+    trigger.setAttribute('aria-expanded', 'false');
+  } else {
+    item.classList.add('open');
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+    trigger.setAttribute('aria-expanded', 'true');
+    setTimeout(() => { item.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }, 100);
+  }
+}
+// Expand / Collapse all
+function expandAll() {
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.classList.add('open');
+    item.querySelector('.faq-answer').style.maxHeight = item.querySelector('.faq-answer').scrollHeight + 'px';
+    item.querySelector('.faq-trigger').setAttribute('aria-expanded', 'true');
+  });
+}
+function collapseAll() {
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.classList.remove('open');
+    item.querySelector('.faq-answer').style.maxHeight = '0';
+    item.querySelector('.faq-trigger').setAttribute('aria-expanded', 'false');
+  });
+}
+// Copy link
+function copyLink() {
+  const url = window.location.href;
+  navigator.clipboard.writeText(url).then(() => {
+    const toast = document.getElementById('copyToast');
+    toast.classList.add('show');
+    setTimeout(() => toast.classList.remove('show'), 2500);
+  }).catch(() => {
+    prompt('Copy this link:', url);
+  });
+}
+// Share by email
+function shareEmail() {
+  const subject = encodeURIComponent('Cognitive Biblical Therapy — FAQ for Pastors & Counselors');
+  const body = encodeURIComponent(
+    'I wanted to share this FAQ resource on Cognitive Biblical Therapy with you.\n\n' +
+    'It covers 20 key questions for pastors, counselors, and ministry leaders — including what CBT is, how it differs from nouthetic counseling, research outcomes, and practical application.\n\n' +
+    'Open it here: ' + window.location.href + '\n\n' +
+    '— Help People Ministry'
+  );
+  window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
+}
+// Open first item by default
+document.addEventListener('DOMContentLoaded', () => {
+  const first = document.getElementById('faq1');
+  if (first) {
+    first.classList.add('open');
+    first.querySelector('.faq-answer').style.maxHeight = first.querySelector('.faq-answer').scrollHeight + 'px';
+  }
+});
+</script>
+
+</body>
+</html>
